@@ -1,7 +1,8 @@
 package org.tp24.excepcion;
 
-public class cedulaexcepcion extends RuntimeException {
-    public cedulaexcepcion(String Cedula) {
+public class CedulaExcepcion extends ClientesExeptions {
+    
+    public CedulaExcepcion(String Cedula) {
         super("Cliente con la cédula"+Cedula+"no encontrado");
 
     }

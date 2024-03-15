@@ -1,8 +1,8 @@
 package org.tp24.excepcion;
 
-public class nombreyapellidoexcepcion extends RuntimeException {
+public class NombreYapellidoExcepcion extends RuntimeException {
 
-    public nombreyapellidoexcepcion(String nombreyapellido) {
-        super("Cliente con el nombre y apellido"+nombreyapellido+"no encontrado");
+    public NombreYapellidoExcepcion(String nombre, String apellido) {
+        super("Cliente con el nombre y apellido"+nombre + apellido+ "no encontrado");
     }
 }
