@@ -42,4 +42,10 @@ public class ClientProviderInMemoryImpl implements ClientesRepository {
         }
     }
 
+
+    @Override
+    public List<Cliente> getAll() {
+        return listaclientes;
+    }
+
 }

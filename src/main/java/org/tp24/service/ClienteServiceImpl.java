@@ -11,6 +11,9 @@ import org.tp24.repository.ClientesRepository;
 public class ClienteServiceImpl {
     private ClientesRepository interfaceclient;
 
+    public ClienteServiceImpl(ClientesRepository interfaceclient){
+        this.interfaceclient = interfaceclient;
+    }
     public List<Cliente> buscarPorNombre(String nombre, String apellido){
         var clients = interfaceclient.buscar(nombre, apellido);
         if(clients.isEmpty()){
@@ -35,5 +38,8 @@ public class ClienteServiceImpl {
         return client;
     }
 
+    public List<Cliente> getAll(){
+        return interfaceclient.getAll();
+    }
 
 }

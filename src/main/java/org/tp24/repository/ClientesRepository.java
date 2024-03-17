@@ -7,4 +7,5 @@ public interface ClientesRepository{
     List<Cliente> buscar(String nombre, String apellido);
     List<Cliente> buscar(BigInteger cupomaximo);
     Cliente buscar(String cedula);
+    List<Cliente> getAll();
 }

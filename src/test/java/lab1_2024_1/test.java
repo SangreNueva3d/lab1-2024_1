@@ -11,7 +11,7 @@ public class test {
 
         public void test1(){
             ApplicationRunner applicationRunner = new ApplicationRunner();
-            applicationRunner.run();
+
             BigInteger numerotururu = BigInteger.valueOf(777);
             Cliente nombrexd = new Cliente("1041631335", "Camilo", "Koran", LocalDate.of(2005, 11, 20), "carrera no se donde",numerotururu);
         }   
