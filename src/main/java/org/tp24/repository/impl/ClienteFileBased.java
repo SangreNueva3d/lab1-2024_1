@@ -21,8 +21,7 @@ public class ClienteFileBased implements ClientesRepository {
     public List<Cliente> getAll() throws ListaClienteException {
         Path path = Paths.get("./src/main/resources/lakasadepepe.txt");
 
-        try {
-            Stream<String> stream = Files.lines(path);
+        try (Stream<String> stream = Files.lines(path)) {
             return stream.map(this::build).toList();
 
         } catch (IOException e) {
